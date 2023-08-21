@@ -1,0 +1,10 @@
+{
+  "regions": {
+    "sydney": {
+      "datalocation": "/data/sydney/"
+    },
+    "atalanta": {
+      "datalocation": "/data/atlanta/"
+    }
+  }
+}

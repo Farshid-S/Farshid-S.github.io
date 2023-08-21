@@ -1,0 +1,8 @@
+GROUP,STUDENT_STATUS,COUNT,CHART_TYPE
+Expanded Response,Missing,35.72,STUDENT STATUS
+Expanded Response,Not a student,267272.18,STUDENT STATUS
+Expanded Response,Yes - Full time College / University,23371.26,STUDENT STATUS
+Expanded Response,Yes - Part time College / University,11204.47,STUDENT STATUS
+Expanded Response,Yes - K - 12th grade,5172.96,STUDENT STATUS
+Expanded Response,Yes - Other type of student,3012.51,STUDENT STATUS
+Expanded Response,Not Provided,1379.97,STUDENT STATUS

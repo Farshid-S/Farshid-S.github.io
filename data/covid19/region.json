@@ -1,0 +1,173 @@
+{
+  "Title": "COVID-19 Travel Metrics",
+  "CountyFile": "ZoneShape.json",
+  "Icon": "RSG.ico",
+  "Logo": "RSG_400px.jpg",
+  "NavbarTitle": "COVID-19 Travel Metrics",
+  "LinkURL": "https://www.rsginc.com",
+  "CenterMap": [40.656852, -74.028204],
+  "FrontPageTitle": "Vanishing Travel",
+  "FrontPageSubtitle": "New York City Metro Area Before and During the COVID-19 Outbreak",
+  "HeroImageLayout": true,
+  "HeroImage": "charles-forerunner-small.jpg",
+  "FrontPageGraphic": "RSG_400px.jpg",
+  "scenarios": {
+    "ny-metro": {
+      "title": "New York Metro Region Dashboard",
+      "visualizations": {
+        "TimeUse": [
+          {
+            "name": "Location During the Day",
+            "title": "Location During the Day",
+            "config": "Default",
+            "file": "time_use_06262020.csv",
+            "info": "Displays activity estimates based on SafeGraph location data. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.",
+            "explanation": [
+              {
+                "header": "Summary",
+                "body": [
+                  {
+                    "type": "unorderedList",
+                    "content": [
+                      "Average time use by location (at home, at work, and other) for resident of and visitors to the New York Metropolitan from February to June 2020.",
+                      "“Before” represents average behavior prior to the COVID-19 pandemic, defined as February 1st – March 9th, 2020",
+                      "“Now” represents average behavior during the COVID-19 pandemic, defined as after March 16th, 2020",
+                      "New York residents and visitors alike showed a marked increase in time spent at home between 10 AM and 8 PM on the weekdays, and between 10 AM and midnight on weekends."
+                    ]
+                  }
+                ]
+              },
+              {
+                "header": "Instructions",
+                "body": [
+                  {
+                    "type": "unorderedList",
+                    "content": [
+                      "Hover the mouse over each label above the graph to update the chart with the corresponding data set.",
+                      "Hover the mouse over the chart to see percentages for each location."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "GroupedCharts": [
+          {
+            "name": "Stay-at-Home by Week",
+            "title": "Stay-at-Home by Week",
+            "config": "Default",
+            "file": "time_series_06262020.csv",
+            "info": "The percent of time people spent at home, at work, or somewhere else, by week",
+            "explanation": [
+              {
+                "header": "Summary",
+                "body": [
+                  {
+                    "type": "unorderedList",
+                    "content": [
+                      "Proportion of New York Metropolitan area residents at home, work, and other locations between 9am-6pm during weekdays and weekends average by week, starting the first week of February 2020."
+                    ]
+                  }
+                ]
+              },
+              {
+                "header": "Instructions",
+                "body": [
+                  {
+                    "type": "unorderedList",
+                    "content": [
+                      "Hover the mouse over each bar to see the percentage value that bar represents."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "BarMap": [
+          {
+            "name": "Devices at Home by County",
+            "file": "map_06262020.csv",
+            "config": "Default",
+            "aggregationMethod": "average",
+            "barGroupSortMethod": "firstBar",
+            "info": "Devices detected at home by county and time of day",
+            "explanation": [
+              {
+                "header": "Summary",
+                "body": [
+                  {
+                    "type": "unorderedList",
+                    "content": [
+                      "Average change in time spent at home between 9am-6pm now relative to before the COVID-19 pandemic, summarized by each device’s inferred home Census tract location. The size of the bubbles on the map show how the magnitude of change in time spent at home varies over the region.",
+                      "The bar graph depicts county summarizes of these data",
+                      "“Before” the COVID-19 pandemic is defined as February 1st – March 9th, 2020",
+                      "“Now” is defined as after March 16th, 2020"
+                    ]
+                  }
+                ]
+              },
+              {
+                "header": "Instructions",
+                "body": [
+                  {
+                    "type": "unorderedList",
+                    "content": [
+                      "For the left graph: Select/deselect bubbles to add/remove day types.",
+                      "For the left graph: Hover mouse over graph to see detail.",
+                      "For the right map: Use the drop-down selection to view different day types.",
+                      "For the right map: Use the layer menu in the top right to select different layers."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "BarMap": {
+    "Default": {
+      "ZoneFile": "ZoneShape.json",
+      "CycleMapTools": false,
+      "StackAllChartsByDefault": false,
+      "DefaultBubbleSize": 3
+    }
+  },
+  "RadarCharts": {
+    "Default": {
+      "NumberColsRadar": 4,
+      "IndependentScale": [""],
+      "ConvertAxesToPercent": true
+    }
+  },
+
+  "GroupedCharts": {
+    "Default": {
+      "NumberColsGrouped": 1,
+      "SwapLegendByDefault": true,
+      "ShowAsPercentByDefault": false,
+      "ShowAsVerticalByDefault": true,
+      "StackAllChartsByDefault": true,
+      "HideControls": true,
+      "ChartWidthOverride": []
+    }
+  },
+  "TimeUse": {
+    "Default": {
+      "HideCountsPercentagesToggle": true
+    }
+  },
+  "Sunburst": {
+    "Default": {}
+  },
+  "3DMap": {
+    "Default": {
+      "ZoneFile": "ZoneShape.GeoJSON",
+      "ShowPeriodsAsDropdown": false,
+      "DataHasPeriods": true
+    }
+  }
+}

@@ -1,0 +1,9 @@
+GROUP,TYPE_OF_FARE,COUNT,CHART_TYPE
+Expanded Response,Regular Fare,273007.77,TYPE OF FARE
+Expanded Response,Senior (65 and older),9478.9,TYPE OF FARE
+Expanded Response,Disabled/Medicare Discount,9703.79,TYPE OF FARE
+Expanded Response,Youth (Under 18),37.38,TYPE OF FARE
+Expanded Response,Medicare Card Holder,71.62,TYPE OF FARE
+Expanded Response,Senior (60 and Older),36.8,TYPE OF FARE
+Expanded Response,Other,4645.5,TYPE OF FARE
+Expanded Response,Not Providded,30.28,TYPE OF FARE
